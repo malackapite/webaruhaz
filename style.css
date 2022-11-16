@@ -1,0 +1,10 @@
+li{
+    display: inline;
+}
+img{
+    width: 200px;
+}
+article{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

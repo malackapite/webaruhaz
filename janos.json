@@ -1,0 +1,46 @@
+{
+    "termek":[
+        {
+            "title":"macska",
+            "picture":"https://http.cat/100",
+            "asd": "Sanyi",
+            "price": 12345
+        },
+        {
+            "title":"macska2",
+            "picture":"https://http.cat/100",
+            "asd": "Sanyi",
+            "price": 12345
+        },
+        {
+            "title":"macska",
+            "picture":"https://http.cat/100",
+            "asd": "Sanyi",
+            "price": 12345
+        },
+        {
+            "title":"macska",
+            "picture":"https://http.cat/100",
+            "asd": "Sanyi",
+            "price": 12345
+        },
+        {
+            "title":"macska",
+            "picture":"https://http.cat/100",
+            "asd": "Sanyi",
+            "price": 12345
+        },
+        {
+            "title":"macska",
+            "picture":"https://http.cat/100",
+            "asd": "Sanyi",
+            "price": 12345
+        },
+        {
+            "title":"macska",
+            "picture":"https://http.cat/100",
+            "asd": "Sanyi",
+            "price": 12345
+        }
+    ]
+}

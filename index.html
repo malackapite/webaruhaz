@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sldk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Kezdőlap</a></li>
+                <li><a href="#">menü 2</a></li>
+                <li><a href="#">menü 3</a></li>
+            </ul>
+        </nav>
+        <article></article>
+        <aside><h2>A kosár tartalma</h2><div id="szoveg"></div></aside>
+        <footer></footer>
+    </main>
+    <script type="module">
+        import json from "./janos.json" assert { type: "json" };
+        let termekLista=json.termek;
+        console.log(termekLista[0].title);
+        
+        
+        for(var ix=0;ix<termekLista.length;ix++)
+            document.getElementsByTagName('article')[0].innerHTML+=`<div>
+            <h2>${termekLista[ix].title}</h2>
+            <img src="${termekLista[ix].picture}">
+            <p>${termekLista[ix].asd}</p>
+            <input type="button" value="vásárlás" onClick=szamol()>
+            <span>${termekLista[ix].price} Ft</span>
+            </div>`
+    </script>
+    <script>
+        function szamol()
+        {
+            document.getElementById('szoveg').innerHTML+=`<p>nem számolom ki Ft</p>`;
+        }
+    </script>
+</body>
+</html>
