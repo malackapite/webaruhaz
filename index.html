@@ -18,27 +18,26 @@
         </nav>
         <article></article>
         <aside><h2>A kosár tartalma</h2><div id="szoveg"></div></aside>
-        <footer></footer>
+        <footer>I'm a professional cat offender</footer>
     </main>
     <script type="module">
         import json from "./janos.json" assert { type: "json" };
         let termekLista=json.termek;
-        console.log(termekLista[0].title);
-        
+        console.log(termekLista[0].price);
         
         for(var ix=0;ix<termekLista.length;ix++)
             document.getElementsByTagName('article')[0].innerHTML+=`<div>
             <h2>${termekLista[ix].title}</h2>
             <img src="${termekLista[ix].picture}">
             <p>${termekLista[ix].asd}</p>
-            <input type="button" value="vásárlás" onClick=szamol()>
+            <input type="button" value="vásárlás" onClick=szamol(${termekLista[ix].price})>
             <span>${termekLista[ix].price} Ft</span>
             </div>`
     </script>
     <script>
-        function szamol()
+        function szamol(price)
         {
-            document.getElementById('szoveg').innerHTML+=`<p>nem számolom ki Ft</p>`;
+            document.getElementById('szoveg').innerHTML+=`<p>${price} Ft</p>`;
         }
     </script>
 </body>

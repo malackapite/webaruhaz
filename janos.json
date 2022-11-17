@@ -2,44 +2,44 @@
     "termek":[
         {
             "title":"macska",
-            "picture":"https://http.cat/100",
+            "picture":"https://http.cat/200",
             "asd": "Sanyi",
             "price": 12345
         },
         {
-            "title":"macska2",
-            "picture":"https://http.cat/100",
-            "asd": "Sanyi",
+            "title":"fartcry",
+            "picture":"https://http.cat/404",
+            "asd": "😣💩",
             "price": 12345
         },
         {
-            "title":"macska",
-            "picture":"https://http.cat/100",
-            "asd": "Sanyi",
+            "title":"vacation",
+            "picture":"https://http.cat/301",
+            "asd": "😳",
             "price": 12345
         },
         {
-            "title":"macska",
-            "picture":"https://http.cat/100",
-            "asd": "Sanyi",
+            "title":"álmos vagyok, úgyhogy most ez lesz a neve",
+            "picture":"https://http.cat/201",
+            "asd": "🐤🐤💨💨💨🚓🚓🚓🚓🚓",
             "price": 12345
         },
         {
-            "title":"macska",
-            "picture":"https://http.cat/100",
-            "asd": "Sanyi",
+            "title":"grand theft fridge",
+            "picture":"https://http.cat/300",
+            "asd": "🍗🍗😎",
             "price": 12345
         },
         {
-            "title":"macska",
-            "picture":"https://http.cat/100",
-            "asd": "Sanyi",
+            "title":"bad ending",
+            "picture":"https://http.cat/412",
+            "asd": "💀💀💀",
             "price": 12345
         },
         {
-            "title":"macska",
+            "title":"domestic air",
             "picture":"https://http.cat/100",
-            "asd": "Sanyi",
+            "asd": "🐈💨",
             "price": 12345
         }
     ]

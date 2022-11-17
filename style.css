@@ -1,10 +1,27 @@
-li{
-    display: inline;
+main{
+    display: grid;
+    
+    grid-template-areas: "n n n"
+                         "a a j"
+                         "f f f";
 }
-img{
-    width: 200px;
+nav{
+    grid-area: n;
 }
 article{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-area: a;
+}
+aside{
+    grid-area: j;
+}
+footer{
+    grid-area: f;
+}
+li{
+   display: inline; 
+}
+img{
+    width: 200px;
 }
