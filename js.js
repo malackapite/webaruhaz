@@ -2,6 +2,7 @@ import json from "./janos.json" assert { type: "json" };
 let kosLista = [];
 let osszeg=0;
 termekMegjelen();
+document.getElementById('fizet').addEventListener("click",fizetes);
 
 function szamol(ix) {
     kosLista.push(
@@ -13,10 +14,13 @@ function szamol(ix) {
     }
     );
     //console.log(kosLista)
-    document.getElementById("szoveg").innerHTML += `<p>
+    document.getElementById("szoveg").innerHTML += `<div id="div${ix}">
+    <p>
     <span>${kosLista[kosLista.length-1].title}</span><br>
     <span>${kosLista[kosLista.length-1].asd}</span><br>
-    <span>${kosLista[kosLista.length-1].price} Ft</span></p>`;
+    <span>${kosLista[kosLista.length-1].price} Ft</span></p>
+    <input type="button" value="self distruction">
+    </div>`;
     osszeg+= parseInt(kosLista[kosLista.length-1].price);
     console.log(kosLista[kosLista.length-1].price)
     document.getElementById("osszeg").innerHTML=osszeg;
@@ -44,4 +48,10 @@ function termekMegjelen() {
     });
     
   }
+}
+function fizetes(){
+  localStorage.setItem("termekLista", JSON.stringify(kosLista))
+  console.log(kosLista)
+  console.log( localStorage.getItem("termekLista"))
+  window.open("fizetes.html","_self");
 }

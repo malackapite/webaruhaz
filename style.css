@@ -25,3 +25,17 @@ li{
 img{
     width: 200px;
 }
+table{
+    border-collapse: collapse;
+}
+tr,td{
+    border: 1px gray solid;
+}
+tr:nth-child(even)
+{
+    background-color: whitesmoke
+}
+tr:nth-child(odd)
+{
+    background-color: rgb(125, 190, 187)
+}
